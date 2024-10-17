@@ -11,5 +11,5 @@ COPY src ./src
 # Build the application
 RUN mvn clean package -DskipTests
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "example.Helloworld"]
+# Run the generated JAR file (assuming it's located in the target directory)
+CMD ["java", "-cp", "target/classes", "example.HelloWorld"]

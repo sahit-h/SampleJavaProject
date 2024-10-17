@@ -12,4 +12,4 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "sampleJavaProject.Helloworld"]
+ENTRYPOINT ["java", "-jar", "example.Helloworld"]

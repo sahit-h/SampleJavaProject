@@ -12,4 +12,4 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Run the generated JAR file (assuming it's located in the target directory)
-CMD ["java", "-cp", "target/classes", "example.HelloWorld"]
+CMD ["java", "-cp", "target/classes", "sample.HelloWorld"]
